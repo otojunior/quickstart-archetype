@@ -40,7 +40,7 @@
 
 	<build>
 		<plugins>
-
+			<!-- Gerar JAR executável: mvn clean package shade:shade -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
