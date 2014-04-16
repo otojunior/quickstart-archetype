@@ -14,7 +14,7 @@
 	</properties>
 	
 	<scm>
-		<developerConnection>scm:git:https://otojunior@github.com/otojunior/quickstart-archetype.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:otojunior/quickstart-archetype.git</developerConnection>
 	</scm>
 	
 	<distributionManagement>
