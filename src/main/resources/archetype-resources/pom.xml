@@ -46,7 +46,6 @@
 
 	<build>
 		<plugins>
-			<!-- Gerar JAR executável: mvn clean package shade:shade -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -58,6 +57,16 @@
 							<mainClass>${package}.App</mainClass>
 						</manifest>
 					</archive>
+				</configuration>
+			</plugin>
+			
+			<!-- Gerar JAR executável: mvn clean package shade:shade -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<minimizeJar>true</minimizeJar>
 				</configuration>
 			</plugin>
 
