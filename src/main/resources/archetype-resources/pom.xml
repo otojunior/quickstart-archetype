@@ -14,6 +14,16 @@
 	<properties>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<plugin.version.java>1.7</plugin.version.java>
+		<plugin.version.maven-jar-plugin>2.4</plugin.version.maven-jar-plugin>
+		<plugin.version.maven-shade-plugin>2.3</plugin.version.maven-shade-plugin>
+		<plugin.version.maven-compiler-plugin>3.1</plugin.version.maven-compiler-plugin>
+		<plugin.version.maven-source-plugin>2.2.1</plugin.version.maven-source-plugin>
+		<plugin.version.maven-javadoc-plugin>2.9.1</plugin.version.maven-javadoc-plugin>
+		<plugin.version.maven-surefire-plugin>2.16</plugin.version.maven-surefire-plugin>
+		<plugin.version.maven-release-plugin>2.5</plugin.version.maven-release-plugin>
+		<plugin.version.sonar-maven3-plugin>4.4</plugin.version.sonar-maven3-plugin>
 	</properties>
 
 	<dependencies>
@@ -42,6 +52,12 @@
 			<artifactId>logback-classic</artifactId>
 			<version>1.0.13</version>
 		</dependency>
+		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.11</version>
+		    <scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -49,7 +65,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
+				<version>${plugin.version.maven-jar-plugin}</version>
 				<configuration>
 					<archive>
 						<manifest>
@@ -64,27 +80,26 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.3</version>
+				<version>${plugin.version.maven-shade-plugin}</version>
 				<configuration>
-					<minimizeJar>true</minimizeJar>
+					<minimizeJar>false</minimizeJar>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>${plugin.version.maven-compiler-plugin}</version>
 				<configuration>
-					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>${plugin.version.java}</source>
+					<target>${plugin.version.java}</target>
 				</configuration>
 			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>2.2.1</version>
+				<version>${plugin.version.maven-source-plugin}</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -98,7 +113,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9.1</version>
+				<version>${plugin.version.maven-javadoc-plugin}</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -112,13 +127,22 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.16</version>
+				<version>${plugin.version.maven-surefire-plugin}</version>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${plugin.version.maven-release-plugin}</version>
+				<configuration>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+				</configuration>
 			</plugin>
 			
 			<plugin>
 				<groupId>org.codehaus.sonar</groupId>
 			    <artifactId>sonar-maven3-plugin</artifactId>
-			    <version>4.4</version>
+			    <version>${plugin.version.sonar-maven3-plugin}</version>
 			</plugin>
 		</plugins>
 	</build>
