@@ -14,8 +14,14 @@ import org.slf4j.LoggerFactory;
  * @author <author name>
  */
 public class AppTest {
+	/**
+	 * Logger do SLF4J.
+	 */
 	private static final Logger LOG = LoggerFactory.getLogger(AppTest.class);
 	
+	/**
+	 * Classse a ser testada.
+	 */
 	private App app;
 
 	/**

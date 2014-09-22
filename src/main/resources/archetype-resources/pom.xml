@@ -12,9 +12,13 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		
+		<dependency.version.commons-lang3>3.2.1</dependency.version.commons-lang3>
+		<dependency.version.commons-collections4>4.0</dependency.version.commons-collections4>
+		<dependency.version.logback>1.1.2</dependency.version.logback>
+		<dependency.version.c3p0>0.9.1.2</dependency.version.c3p0>
+		<dependency.version.jansi>1.11</dependency.version.jansi>
+		<dependency.version.junit>4.11</dependency.version.junit>
 		<plugin.version.java>1.7</plugin.version.java>
 		<plugin.version.maven-jar-plugin>2.4</plugin.version.maven-jar-plugin>
 		<plugin.version.maven-shade-plugin>2.3</plugin.version.maven-shade-plugin>
@@ -30,32 +34,32 @@
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-lang3</artifactId>
-		    <version>3.2.1</version>
+		    <version>${dependency.version.commons-lang3}</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-collections4</artifactId>
-		    <version>4.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.5</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-core</artifactId>
-			<version>1.0.13</version>
+		    <version>${dependency.version.commons-collections4}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.0.13</version>
+			<version>${dependency.version.logback}</version>
+		</dependency>
+		<dependency>
+		    <groupId>c3p0</groupId>
+		    <artifactId>c3p0</artifactId>
+		    <version>${dependency.version.c3p0}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.fusesource.jansi</groupId>
+		    <artifactId>jansi</artifactId>
+		    <version>${dependency.version.jansi}</version>
 		</dependency>
 		<dependency>
 		    <groupId>junit</groupId>
 		    <artifactId>junit</artifactId>
-		    <version>4.11</version>
+		    <version>${dependency.version.junit}</version>
 		    <scope>test</scope>
 		</dependency>
 	</dependencies>
