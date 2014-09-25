@@ -1,10 +1,9 @@
 #!/bin/bash
+# Shell script to help project creation with Maven.
+# Author: Oto Junior
+# Date: 31/12/2013
 #
-# Shell script para criação de projetos tipo WAR(no-multiprojects).
-# Autor: Oto Junior
-# Data: 31/12/2013
-#
-# OBS: MOVER ESTE SCRIPT PARA A PASTA RAIZ DOS PROJETOS.
+# OBS: MOVE THIS SCRIPT TO ROOT PROJECTS FOLDER.
 #
 mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype \
 -DarchetypeArtifactId=quickstart-archetype \

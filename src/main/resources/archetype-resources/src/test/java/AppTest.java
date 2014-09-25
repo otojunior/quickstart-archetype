@@ -10,17 +10,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Classe de teste principal da aplicação
+ * Main App test class.
  * @author <author name>
  */
 public class AppTest {
 	/**
-	 * Logger do SLF4J.
+	 * SLF4J Logger.
 	 */
 	private static final Logger LOG = LoggerFactory.getLogger(AppTest.class);
 	
 	/**
-	 * Classse a ser testada.
+	 * Class to be tested.
 	 */
 	private App app;
 
@@ -43,7 +43,7 @@ public class AppTest {
 	}
 
 	/**
-	 * Teste do método main.
+	 * Main method test.
 	 */
 	@Test
 	public void testMain() {
@@ -51,7 +51,7 @@ public class AppTest {
 	}
 
 	/**
-	 * Testa o método aMethod
+	 * aMethod method test.
 	 */
 	@Test
 	public void testAMethod() {

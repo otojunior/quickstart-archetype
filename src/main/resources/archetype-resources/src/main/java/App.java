@@ -4,28 +4,30 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Classe principal da aplicação.
+ * Application Main Class.
  * @author <Author name>
  */
 public class App {
 	/**
-	 * Logger do SLF4J.
+	 * SLF4J Logger.
 	 */
 	private static final Logger LOG = LoggerFactory.getLogger(App.class);
 	
 	/**
-	 * Método principal da aplicação.
-	 * @param args Argumentos da linha de comando.
+	 * Application main method.
+	 * @param args Command line arguments.
 	 */
 	public static void main(String[] args) {
+		LOG.info("Example Application starting.");		
 		App instance = new App();
 		instance.aMethod();
+		LOG.info("Example Application terminated.");
 	}
 	
 	/**
 	 * A sample method.
 	 */
 	public void aMethod() {
-		LOG.info("App :: Running main application");
+		LOG.trace("Sample method called.");
 	}
 }

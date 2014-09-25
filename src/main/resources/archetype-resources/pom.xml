@@ -106,7 +106,7 @@
 				</configuration>
 			</plugin>
 			
-			<!-- Gerar JAR executável: mvn clean package shade:shade -->
+			<!-- Executable JAR creation: mvn clean package shade:shade -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>

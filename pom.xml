@@ -52,7 +52,6 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${plugin.version.maven-compiler-plugin}</version>
 				<configuration>
-					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
 					<source>${plugin.version.java}</source>
 					<target>${plugin.version.java}</target>
 				</configuration>
