@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Main App test class.
- * @author <author name>
+ * @author [Author name]
  */
 public class AppTest {
 	/**
