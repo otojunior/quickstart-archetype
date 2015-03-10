@@ -18,16 +18,6 @@ public class App {
 	 * @param args Command line arguments.
 	 */
 	public static void main(String[] args) {
-		LOG.info("Example Application starting.");		
-		App instance = new App();
-		instance.aMethod();
-		LOG.info("Example Application terminated.");
-	}
-	
-	/**
-	 * A sample method.
-	 */
-	public void aMethod() {
-		LOG.trace("Sample method called.");
+		LOG.info("Example Application.");		
 	}
 }
