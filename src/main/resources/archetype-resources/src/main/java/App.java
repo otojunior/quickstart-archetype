@@ -18,6 +18,6 @@ public class App {
 	 * @param args Command line arguments.
 	 */
 	public static void main(String[] args) {
-		LOG.info("Example Application.");		
+		LOG.info("${artifactId} Application.");		
 	}
 }
