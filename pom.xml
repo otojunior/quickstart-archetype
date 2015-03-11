@@ -26,24 +26,16 @@
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>mvnrepo-snapshot-${artifactId}</id>
+			<id>mvnrepo-snapshot-${project.artifactId}</id>
 			<url>file://${project.build.directory}/mvn-repo/snapshot</url>
 		</snapshotRepository>
 		<repository>
-			<id>mvnrepo-release-${artifactId}</id>
+			<id>mvnrepo-release-${project.artifactId}</id>
 			<url>file://${project.build.directory}/mvn-repo/release</url>
 		</repository>
 	</distributionManagement>
 
 	<build>
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.wagon</groupId>
-				<artifactId>wagon-webdav</artifactId>
-				<version>${extension.version.wagon}</version>
-			</extension>
-		</extensions>
-
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
