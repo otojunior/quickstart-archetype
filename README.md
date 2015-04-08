@@ -22,13 +22,13 @@ Quickstart Java project archetype
 1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=quickstart-archetype -DarchetypeVersion=<archetype version>  -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
 
 Parameters:
-archetypeGroupId: MUST BE org.otojunior.archetype
-archetypeArtifactId: MUST BE quickstart-archetype
-archetypeVersion: Archetype version to use to creation.
-groupId: Your company domain in Iava convention. Ex.: com.acme
-artifactId: Your project name. Ex.: sampleproject
-version: Your first project version. Recommendation: 1.0-SNAPSHOT
-package: Default package of your application.
+* archetypeGroupId: MUST BE org.otojunior.archetype
+* archetypeArtifactId: MUST BE quickstart-archetype
+* archetypeVersion: Archetype version to use to creation.
+* groupId: Your company domain in Iava convention. Ex.: com.acme
+* artifactId: Your project name. Ex.: sampleproject
+* version: Your first project version. Recommendation: 1.0-SNAPSHOT
+* package: Default package of your application.
 
 Obs.: In root archetype folder, there is a script to help this creation. Edit the script and put it into another folder. Ex.: the your root projects folder.
 
