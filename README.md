@@ -3,7 +3,7 @@ Quickstart Java project archetype
 
 [![Build Status](https://travis-ci.org/otojunior/quickstart-archetype.svg?branch=master)](https://travis-ci.org/otojunior/quickstart-archetype)
 
-1. Archetype instalation and use
+1. Archetype Instalation and Use
 --------------------------------
 
 **Pre-Requisites:**
@@ -32,7 +32,7 @@ package: Default package of your application.
 
 Obs.: In root archetype folder, there is a script to help this creation. Edit the script and put it into another folder. Ex.: the your root projects folder.
 
-2. Logs framework configuration
+2. Logs Framework Configuration
 -------------------------------
 
 Log Framework: SLF4J (API) and Logback (Implementation). Supports many log appenders (destiny of messages): console, file, databases, etc. For logs in databases (DBAppender), the tables must be created first by scripts in: 
