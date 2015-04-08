@@ -1,4 +1,4 @@
-Quickstart Java project archetype
+Quickstart Java Project Archetype
 =================================
 
 [![Build Status](https://travis-ci.org/otojunior/quickstart-archetype.svg?branch=master)](https://travis-ci.org/otojunior/quickstart-archetype)
