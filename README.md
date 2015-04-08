@@ -6,16 +6,19 @@ Quickstart Java project archetype
 1. Archetype instalation and use
 --------------------------------
 
-Pre-Requisites
+**Pre-Requisites:**
+
 - JDK 6+
 - Maven (3.x+)
 - Git
 
-Install Steps:
+**Install Steps:**
+
 1. Download the archetype.
 2. Install the archetype: mvn clean install
 
-Use Steps:
+**Use Steps:**
+
 1. Command: mvn archetype:generate -DarchetypeGroupId=org.otojunior.archetype -DarchetypeArtifactId=quickstart-archetype -DarchetypeVersion=<archetype version>  -DgroupId=<your company domain> -DartifactId=<your project> -Dversion=<your project verson> -Dpackage=<your project package> -Dmaven.test.skip=true -B
 
 Parameters:
