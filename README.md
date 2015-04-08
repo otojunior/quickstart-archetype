@@ -33,6 +33,7 @@ Obs.: In root archetype folder, there is a script to help this creation. Edit th
 -------------------------------
 
 Log Framework: SLF4J (API) and Logback (Implementation). Supports many log appenders (destiny of messages): console, file, databases, etc. For logs in databases (DBAppender), the tables must be created first by scripts in: 
-https://github.com/qos-ch/logback/tree/v_1.1.1/logback-classic/src/main/java/ch/qos/logback/classic/db/script
+* [Logback Scripts](https://github.com/qos-ch/logback/tree/v_1.1.1/logback-classic/src/main/java/ch/qos/logback/classic/db/script)
 
-The JDBC drivers can be found in search.maven.org
+The JDBC drivers can be found in: 
+* [Maven Repository](http://search.maven.org)
