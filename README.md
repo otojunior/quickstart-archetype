@@ -17,6 +17,7 @@ Quickstart Java Project Archetype
 =================================
 
 [![Build Status](https://travis-ci.org/otojunior/quickstart-archetype.svg?branch=master)](https://travis-ci.org/otojunior/quickstart-archetype)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4e11be2975834c0fa38e9b13c50c0d92)](https://www.codacy.com/app/otojunior/quickstart-archetype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=otojunior/quickstart-archetype&amp;utm_campaign=Badge_Grade)
 
 1. Archetype Instalation and Use
 --------------------------------
