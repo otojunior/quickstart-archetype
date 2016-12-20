@@ -18,6 +18,7 @@ Quickstart Java Project Archetype
 
 [![Build Status](https://travis-ci.org/otojunior/quickstart-archetype.svg?branch=master)](https://travis-ci.org/otojunior/quickstart-archetype)
 [![CircleCI](https://circleci.com/gh/otojunior/quickstart-archetype.svg?style=shield)](https://circleci.com/gh/otojunior/quickstart-archetype)
+[![Coverage Status](https://coveralls.io/repos/github/otojunior/quickstart-archetype/badge.svg?branch=master)](https://coveralls.io/github/otojunior/quickstart-archetype?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4e11be2975834c0fa38e9b13c50c0d92)](https://www.codacy.com/app/otojunior/quickstart-archetype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=otojunior/quickstart-archetype&amp;utm_campaign=Badge_Grade)
 
 
@@ -58,3 +59,43 @@ Log Framework: SLF4J (API) and Logback (Implementation). Supports many log appen
 
 The JDBC drivers can be found in: 
 * [Maven Repository](http://search.maven.org)
+
+3. Configuração para integração com Coveralls e Codacy
+------------------------------------------------------
+
+```xml
+<plugin>
+	<groupId>org.eluder.coveralls</groupId>
+	<artifactId>coveralls-maven-plugin</artifactId>
+	<version>4.3.0</version>
+</plugin>
+
+<plugin>
+	<groupId>com.gavinmogan</groupId>
+    <artifactId>codacy-maven-plugin</artifactId>
+    <version>1.0.3</version>
+    <executions>
+    	<execution>
+    		<goals>
+    			<goal>coverage</goal>
+    		</goals>
+    		<configuration>
+		    	<coverageReportFile>target/site/jacoco/jacoco.xml</coverageReportFile>
+		    	<projectToken>4f56fb080b83441494c31f1180164d25</projectToken>
+		    	<apiToken>4f56fb080b83441494c31f1180164d25</apiToken>
+    		</configuration>
+    	</execution>
+    </executions>
+</plugin>
+
+```
+**projectToken** e **apiToken** são obtidos do projeto no Codacy.
+
+No arquivo **.travis.yml**, deve-se acresecntar as linhas:
+
+```
+install: true
+script:  mvn clean test jacoco:report
+after_success:
+  - mvn coveralls:report
+```
